@@ -69,16 +69,16 @@
 //---------------------------------------------------------------------------------------------------------------
 // Question 6:
 // Create a JavaScript function that takes a string as input and returns a new string with each character duplicated (e.g., "hello" becomes "hheelllloo").
-
 // Input: "hello"
-function duplicateLetters(str){
-        var str2='';
-    for(var i=0;i<str.length;i++){     
-        str2 += str[i]+str[i];
-    }
-    return str2;
-}
-console.log(duplicateLetters("hello"));
+
+// function duplicateLetters(str){
+//         var str2='';
+//     for(var i=0;i<str.length;i++){     
+//         str2 += str[i]+str[i];
+//     }
+//     return str2;
+// }
+// console.log(duplicateLetters("hello"));
 
 //---------------------------------------------------------------------------------------------------------------
 // Question 7:
@@ -97,6 +97,17 @@ console.log(duplicateLetters("hello"));
     
 // }
 // console.log(NumberOfWords(str));
+function countwords(sentence){
+        var count=0;
+        for(var i=0;i<sentence.length;i++){
+            if (sentence[i]!==" ")
+                count++
+        }
+        // count++;
+        console.log(count);
+        // console.log(sentence.length);
+    }
+    countwords("This  is a sample sentence");
 
 
 //---------------------------------------------------------------------------------------------------------------
