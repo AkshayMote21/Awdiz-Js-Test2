@@ -102,22 +102,22 @@
 // Create a JavaScript function that takes a sentence as input and returns the number of words in the sentence.
 
 // Input: "This is a sample sentence."
-// var str = "This is a sample sentence.";
-// function NumberOfWords(str){
+var str = "This is a sample sentence.";
+function NumberOfWords(str){
     
-// }
-// console.log(NumberOfWords(str));
-// function countwords(sentence){
-//         var count=0;
-//         for(var i=0;i<sentence.length;i++){
-//             if (sentence[i]!==" ")
-//                 count++
-//         }
-//         // count++;
-//         console.log(count);
-//         // console.log(sentence.length);
-//     }
-//     countwords("This  is a sample sentence");
+}
+console.log(NumberOfWords(str));
+function countwords(sentence){
+        var count=0;
+        for(var i=0;i<sentence.length;i++){
+            if (sentence[i]!==" ")
+                count++
+        }
+        // count++;
+        console.log(count);
+        // console.log(sentence.length);
+    }
+    countwords("This  is a sample sentence");
 
 
 //---------------------------------------------------------------------------------------------------------------
