@@ -1,7 +1,7 @@
-// test - 2
+// Test - 2
+
 // Question 1: Write a JavaScript function that takes an array of numbers as input and returns a new array with each number squared.
 // Input: [1, 2, 3, 4, 5]
-
 // var array1 = [1,2,3,4,5];
 // function Squared(array){
 //     var array2 = [];
@@ -13,11 +13,21 @@
 // console.log(Squared(array1));
 
 //---------------------------------------------------------------------------------------------------------------
-// Question 2:
-// Create a JavaScript function that checks if a given string is a palindrome (reads the same forwards and backwards).
-
+// Question 2:Create a JavaScript function that checks if a given string is a palindrome (reads the same forwards and backwards).
 // Input: "madam"
-
+// function palindrome(string){
+//     var reverseString = "" ;
+//     for(var i = string.length-1;i>=0;i--){
+//         reverseString = reverseString + string.charAt(i);
+//     }
+//     if(string === reverseString){
+//         return true;
+//     }
+//     else{
+//         return false;
+//     }
+// }
+// console.log(palindrome("madam"));
 
 //---------------------------------------------------------------------------------------------------------------
 // Question 3:
@@ -39,7 +49,6 @@
 // }
 // console.log(Intersection(array1,array2));
 
-
 //---------------------------------------------------------------------------------------------------------------
 // Question 4:
 // Create a JavaScript function that takes an object and a key as input, and returns the value associated with that key in the object. If the key does not exist, return a default value.
@@ -52,19 +61,20 @@
 // }
 // Value(obj);
 
-
 //---------------------------------------------------------------------------------------------------------------
 // Question 5:
 // Write a JavaScript function that takes a number as input and returns an array of its digits.
 // Input: 12345
 // var number = 12345;
 // function ArrayOfDigits(number){
-//     var array2 = [];
-//     array2 = number;
-    
+//     var array = [];
+//     string = number.toString();
+//     for(var i = 0; i < string.length;i++){
+//         array.push(string.charAt(i));
+//     }
+//     return array;
 // }
 // console.log(ArrayOfDigits(number));
-
 
 //---------------------------------------------------------------------------------------------------------------
 // Question 6:
@@ -97,17 +107,17 @@
     
 // }
 // console.log(NumberOfWords(str));
-function countwords(sentence){
-        var count=0;
-        for(var i=0;i<sentence.length;i++){
-            if (sentence[i]!==" ")
-                count++
-        }
-        // count++;
-        console.log(count);
-        // console.log(sentence.length);
-    }
-    countwords("This  is a sample sentence");
+// function countwords(sentence){
+//         var count=0;
+//         for(var i=0;i<sentence.length;i++){
+//             if (sentence[i]!==" ")
+//                 count++
+//         }
+//         // count++;
+//         console.log(count);
+//         // console.log(sentence.length);
+//     }
+//     countwords("This  is a sample sentence");
 
 
 //---------------------------------------------------------------------------------------------------------------
@@ -127,9 +137,15 @@ function countwords(sentence){
 // }
 // console.log(SecondSmallestNumber(array));
 
-
 //---------------------------------------------------------------------------------------------------------------
 // Question 10:
 // Create a JavaScript function that takes a date object and returns a formatted string in the format "YYYY-MM-DD".
-
-// Input: new Date(2024, 4, 15)
+// date=[2024,4,15];
+// function newDate(date){
+//     a = date.slice(0,1);
+//     b = date.slice(1,2);
+//     c = date.slice(2);
+//     d = a + '-' + b + '-' + c ;
+//     console.log(d);
+// }
+// newDate(date);
